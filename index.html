@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Social links profile</title>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        },
+        screens: {
+          'sm': { 'min': '300px', 'max': '767px' },
+          // => @media (min-width: 640px and max-width: 767px) { ... }
+
+          'md': { 'min': '768px', 'max': '1023px' },
+          // => @media (min-width: 768px and max-width: 1023px) { ... }
+
+          'lg': { 'min': '1024px', 'max': '1279px' },
+          // => @media (min-width: 1024px and max-width: 1279px) { ... }
+
+          'xl': { 'min': '1280px', 'max': '1535px' },
+          // => @media (min-width: 1280px and max-width: 1535px) { ... }
+
+          '2xl': { 'min': '1536px' },
+          // => @media (min-width: 1536px) { ... }
+        },
+      }
+    }
+  </script>
+</head>
+<body class="w-screen h-screen bg-[#141414]"> 
+  <main class="flex flex-col justify-center items-center w-screen h-screen sm:px-4">
+    <div class="flex flex-col items-center w-96 sm:w-full h-[720px] bg-zinc-800 rounded-lg">
+        <section class="flex flex-col justify-center items-center my-10">
+          <img src="./assets/images/avatar.jpeg" class="w-32 rounded-full"/>
+          <section class="flex flex-col items-center my-6">
+            <p class="text-lg font-bold text-white">Victor Cassiano</p>
+            <span class="text-lime-400 text-md font-bold">Natal, RN</span>
+          </section>
+          <p class="text-zinc-400">"Front-end developer and Gamer"</p>
+        </section>
+        <section class="flex flex-col w-full h-full p-5 gap-y-5">
+          <a 
+            class="flex flex-col justify-center items-center w-full bg-[#333333] h-11 rounded-lg text-white font-bold hover:bg-lime-400/50"
+            href="https://github.com/Victorcassiano"
+            target="_blank"
+          >
+            Github
+          </a>
+          <a 
+            class="flex flex-col justify-center items-center w-full bg-[#333333] h-11 rounded-lg text-white font-bold hover:bg-lime-400/50"
+            href="https://www.frontendmentor.io/profile/Victorcassiano"
+            target="_blank"
+          >
+            Frontend Mentor
+          </a>
+          <a 
+            class="flex flex-col justify-center items-center w-full bg-[#333333] h-11 rounded-lg text-white font-bold hover:bg-lime-400/50"
+            href="https://www.linkedin.com/in/victor-c-69957912a/"
+            target="_blank"
+          >
+            Linkedin
+          </a>
+          <a 
+            class="flex flex-col justify-center items-center w-full bg-[#333333] h-11 rounded-lg text-white font-bold hover:bg-lime-400/50"
+            href="https://twitter.com/Bart_nocry"
+            target="_blank"
+          >
+            Twitter
+          </a>
+          <a 
+            class="flex flex-col justify-center items-center w-full bg-[#333333] h-11 rounded-lg text-white font-bold hover:bg-lime-400/50"
+            href="https://www.instagram.com/vitu.cassiano/"
+            target="_blank"
+          >
+            Instagram
+          </a>
+        </section>
+    </div>
+    <a 
+      class="text-lime-800 font-bold"
+      href="https://victorcassiano.netlify.app/"
+      target="_blank"
+    >
+      Created by: Victor Cassiano
+    </a>
+  </main> 
+</body>
+</html>
